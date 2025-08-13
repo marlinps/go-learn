@@ -37,8 +37,9 @@ func main() {
 	// TODO: Deklarasi Variable menggunakan Keyword new (variable pointer)
 	name := new(string)
 
-	fmt.Println(name)  // TODO: menampilkan alamat memori nilai tersebut
+	fmt.Println(name)  // TODO: menampilkan alamat memori stringnya tersebut
 	fmt.Println(*name) // TODO: asterisk (*) u/ menampilkan nilai aslinya
+	fmt.Println(&name) // TODO: Jadi ini alamat memori tempat pointer disimpan (bukan alamat stringnya).
 
 	// TODO:; Deklarasi Variable menggunakan Keywaord make
 	/*
