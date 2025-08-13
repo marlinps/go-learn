@@ -41,8 +41,7 @@ func main() {
 	fmt.Println(*name) // TODO: asterisk (*) u/ menampilkan nilai aslinya
 	fmt.Println(&name) // TODO: Jadi ini alamat memori tempat pointer disimpan (bukan alamat stringnya).
 
-	// TODO: Deklarasi Variable menggunakan Keywaord make
-	/*
+	/*	TODO: Deklarasi Variable menggunakan Keywaord make
 		biasa digunukan u/ beberapa jenis variable saja seperti channel, slice, map
 	*/
 
