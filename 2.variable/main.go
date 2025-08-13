@@ -40,4 +40,9 @@ func main() {
 	fmt.Println(name)  // TODO: menampilkan alamat memori nilai tersebut
 	fmt.Println(*name) // TODO: asterisk (*) u/ menampilkan nilai aslinya
 
+	// TODO:; Deklarasi Variable menggunakan Keywaord make
+	/*
+		biasa digunukan u/ beberapa jenis variable saja seperti channel, slice, map
+	*/
+
 }
