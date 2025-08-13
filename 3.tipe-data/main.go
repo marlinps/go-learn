@@ -38,12 +38,12 @@ func main() {
 	Zero value dari tipe numerik desimal adalah  0.0 .
 
 	Zero value berbeda dengan nil. Nil adl nilai kosong, benar-benar kosong. Ada beberapa tipe data yang bisa di-set nilainya dengan  nil , di antaranya:
-	pointer
-	tipe data fungsi
-	slice
-	map
-	channel
-	interface kosong atau  interface{}
+	- pointer
+	- tipe data fungsi
+	- slice
+	- map
+	- channel
+	- interface kosong atau  interface{}
 	*/
 }
 
