@@ -45,6 +45,15 @@ func main() {
 	for i := 0; i < len(numbers); i++ {
 		fmt.Printf("Numbers [%d]: %d\n", i, numbers[i])
 	}
+
+	// TODO: alokasi elemen arraya menggunakan keyword make
+	var Fruits = make([]string, 2)
+	Fruits[0] = "mango"
+	Fruits[1] = "apple"
+
+	for _, fruit := range Fruits {
+		fmt.Printf("nama buah: %s\n", fruit)
+	}
 }
 
 /*  TODO: notes
