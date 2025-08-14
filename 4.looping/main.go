@@ -50,12 +50,12 @@ func main() {
 	}
 
 	// TODO: Pemanfaatan Label Dalam Perulangan
-	// TODO: outerloop (maka break dipanggil dengan target adalah perulangan yang dilabeli outerloop)
-outerloop:
+	// TODO: conteh kata outerloop (maka break dipanggil dengan target adalah perulangan yang dilabeli outerloop)
+outerLoop:
 	for o := 0; o < 5; o++ {
 		for p := 0; p < 5; p++ {
 			if o == 3 {
-				break outerloop // break
+				break outerLoop // break
 			}
 			fmt.Print("matriks [", o, "][", p, "]", "\n")
 		}
