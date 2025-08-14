@@ -17,7 +17,7 @@ func main() {
 
 	// TODO: inisisasi arrat dengan nilai awal
 	// Horizontal
-	var fruits = [5]string{"apple", "mango", "water melon", "orange", "banana"}
+	var fruits = [5]string{"apple", "mango", "watermelon", "orange", "banana"}
 	for _, fruit := range fruits {
 		fmt.Println("Fruit:", fruit)
 	}
@@ -28,7 +28,7 @@ func main() {
 	var fruits2 = [5]string{
 		"apple",
 		"mango",
-		"water melon",
+		"watermelon",
 		"orange",
 		"banana",
 	}
