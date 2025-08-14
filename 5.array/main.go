@@ -17,7 +17,7 @@ func main() {
 
 	// TODO: inisisasi arrat dengan nilai awal
 	// Horizontal
-	var fruits = [5]string{"apple", "mango", "watermelon", "orange", "banana"}
+	fruits := [5]string{"apple", "mango", "watermelon", "orange", "banana"}
 	for _, fruit := range fruits {
 		fmt.Println("Fruit:", fruit)
 	}
@@ -33,12 +33,21 @@ func main() {
 		"banana",
 	}
 
-	for _, fruit2 := range fruits2 {
-		fmt.Println("Fruit2:", fruit2)
+	for i, fruit2 := range fruits2 {
+		fmt.Printf("Fruit2 [%d]: %s\n", i, fruit2)
 	}
 
 	// TODO: inisialisasi arrayy tanpa jumlah elemen [...]
 	var numbers = [...]int{1, 2, 3, 4, 5}
 	fmt.Println("data array \t:", numbers)
 	fmt.Println("jumlah elemen \t:", len(numbers))
+
+	for i := 0; i < len(numbers); i++ {
+		fmt.Printf("Numbers [%d]: %d\n", i, numbers[i])
+	}
 }
+
+/*  TODO: notes
+range mengembalikan 2 nilai yaitu indeks dan elemen
+sedangkan di Go tidak diperbollehkannya adanya variablle yang menganggur/tidak dipakai maka bisa ditampung kedalam underscore(_)
+*/
