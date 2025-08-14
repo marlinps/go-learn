@@ -44,5 +44,4 @@ func main() {
 	/*	TODO: Deklarasi Variable menggunakan Keywaord make
 		biasa digunukan u/ beberapa jenis variable saja seperti channel, slice, map
 	*/
-
 }

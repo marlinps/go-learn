@@ -25,6 +25,10 @@ func main() {
 	var message string = "Halo"
 	fmt.Printf("message: %s \n", message)
 
+	// TODO: Penggunaan Konstanta
+	const phi float32 = 3.14
+	fmt.Println("Phi: ", phi)
+
 	/* TODO: Nilai nil & Zero Value
 
 	nil bukan merupakan tipe data, melainkan sebuah nilai. Variabel yg isi nilainya nil berarti memiiki nilai kosong
