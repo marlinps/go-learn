@@ -36,4 +36,9 @@ func main() {
 	for _, fruit2 := range fruits2 {
 		fmt.Println("Fruit2:", fruit2)
 	}
+
+	// TODO: inisialisasi arrayy tanpa jumlah elemen [...]
+	var numbers = [...]int{1, 2, 3, 4, 5}
+	fmt.Println("data array \t:", numbers)
+	fmt.Println("jumlah elemen \t:", len(numbers))
 }
