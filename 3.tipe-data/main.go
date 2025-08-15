@@ -13,7 +13,7 @@ func main() {
 	// TODO: Tipe Data Numerik Desimal
 	var decimalNumber = 2.62
 
-	fmt.Printf("bilangan desimal: %f\n", decimalNumber) //  %f  digunakan untuk memformat data numerik desimal menjadi string
+	fmt.Printf("bilangan desimal: %f\n", decimalNumber) // %f  digunakan untuk memformat data numerik desimal menjadi string
 
 	fmt.Printf("bilangan desimal: %.3f\n", decimalNumber) // Jumlah digit yang muncul bisa dikontrol menggunakan %.nf , tinggal ganti n dengan angka yang diinginkan.
 
