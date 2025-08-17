@@ -27,6 +27,5 @@ Slice adl reference elemen array (Tipe Data Reference).
 perbedaan antara array dan slice:
 1. Array adl kumpulan nilai atau elemen, Array jumlah elemen didefinisikan
 2. Slice adl referensi tiap elemen, jumlah elemen tidak didefinisikan
-
 penjelasan detail hal 52
 */
