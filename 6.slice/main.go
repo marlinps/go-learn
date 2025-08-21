@@ -19,7 +19,6 @@ func main() {
 	fmt.Println("fruits:", fruits)
 	fmt.Println("fruits[0][2]:", afruits)
 	fmt.Println("fruits[1][4]:", bfruits)
-
 }
 
 /* TODO: notes
