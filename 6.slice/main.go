@@ -17,6 +17,7 @@ func main() {
 	bfruits := fruits[1:4]
 
 	fmt.Println("fruits:", fruits)
+
 	fmt.Println("afruits[0][2]:", afruits)
 	fmt.Println("bfruits[1][4]:", bfruits)
 
@@ -36,10 +37,9 @@ func main() {
 }
 
 /* TODO: notes
-Slice adl reference elemen array (Tipe Data Reference).
+Slice adl reference elemen array (Tipe Data Reference)
 perbedaan antara array dan slice:
 1. Array adl kumpulan nilai atau elemen, Array jumlah elemen didefinisikan
 2. Slice adl referensi tiap elemen, jumlah elemen tidak didefinisikan
-
-penjelasan detaill hal 52
+penjelasan detail hal 52
 */
