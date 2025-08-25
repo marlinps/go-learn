@@ -5,8 +5,8 @@ import "fmt"
 func main() {
 	// TODO: inisialisasi slice
 	slice := []int{1, 2, 3, 4, 5}   // slice
-	array := [5]int{6, 7, 8, 9, 10} //array
-	array2 := [3]int{11, 12, 13}    //array
+	array := [5]int{6, 7, 8, 9, 10} // array
+	array2 := [3]int{11, 12, 13}    // array
 
 	_, _, _ = slice, array, array2
 
@@ -17,9 +17,22 @@ func main() {
 	bfruits := fruits[1:4]
 
 	fmt.Println("fruits:", fruits)
-	fmt.Println("fruits[0][2]:", afruits)
-	fmt.Println("fruits[1][4]:", bfruits)
+	fmt.Println("afruits[0][2]:", afruits)
+	fmt.Println("bfruits[1][4]:", bfruits)
 
+	bfruits[0] = "pinnaple" // TODO: "grape" diganti "pinnaple" maka elemen slice lama berubah semua
+
+	fmt.Println("fruits:", fruits)
+	fmt.Println("afruits[0][2]:", afruits)
+	fmt.Println("bfruits[1][4]:", bfruits)
+
+	// TODO: fungsi len()
+	println("len slice afruits[0][2]:", len(afruits))
+	println("len slice bfruits[1][4]:", len(bfruits))
+
+	// TODO: fungsi cap()  -> menghitung kapasitas maksimal sice
+	println("cap slice afruits[0][2]:", cap(afruits))
+	println("cap slice bfruits[1][4]:", cap(bfruits))
 }
 
 /* TODO: notes
