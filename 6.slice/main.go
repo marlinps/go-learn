@@ -28,12 +28,30 @@ func main() {
 	fmt.Println("bfruits[1][4]:", bfruits)
 
 	// TODO: fungsi len()
-	println("len slice afruits[0][2]:", len(afruits))
-	println("len slice bfruits[1][4]:", len(bfruits))
+	fmt.Println("len slice afruits[0][2]:", len(afruits))
+	fmt.Println("len slice bfruits[1][4]:", len(bfruits))
 
 	// TODO: fungsi cap()  -> menghitung kapasitas maksimal sice
-	println("cap slice afruits[0][2]:", cap(afruits))
-	println("cap slice bfruits[1][4]:", cap(bfruits))
+	fmt.Println("cap slice afruits[0][2]:", cap(afruits))
+	fmt.Println("cap slice bfruits[1][4]:", cap(bfruits))
+
+	// TODO: append()-> menambahkan nilai baru jika len == cap maka elemen baru hasil append merupakan referensi baru
+	// jika len < cap maka elemen baru hasil append ditempatkan sesuai kapisitas maka refrensi yg sama berubah nilaianya
+	cfruits := append(fruits, "durian")
+	dfruits := append(bfruits, "sirsak")
+
+	fmt.Println("cfruits:", cfruits)
+	fmt.Println("dfruits:", dfruits)
+
+	fmt.Println("after append()")
+	fmt.Println("fruits:", fruits)
+	fmt.Println("afruits[0][2]:", afruits)
+	fmt.Println("bfruits[1][4]:", bfruits)
+
+	copyFruits := make([]string, 2)
+	copy(copyFruits, fruits) // TODO: copy (destination, source)
+	fmt.Println("copyFruits:", copyFruits)
+
 }
 
 /* TODO: notes
