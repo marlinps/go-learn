@@ -7,6 +7,10 @@ func main() {
 	slice := []int{1, 2, 3, 4, 5}   // slice
 	array := [5]int{6, 7, 8, 9, 10} // array
 	array2 := [3]int{11, 12, 13}    // array
+	array3 := [...]int{14, 15, 16}  // array
+
+	fmt.Println("array3:", array3)
+	fmt.Println("size array3:", len(array3))
 
 	_, _, _ = slice, array, array2
 

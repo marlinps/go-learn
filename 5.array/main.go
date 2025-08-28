@@ -15,7 +15,7 @@ func main() {
 		fmt.Println("angka"+"["+fmt.Sprint(i)+"]:", value)
 	}
 
-	// TODO: inisisasi arrat dengan nilai awal
+	// TODO: inisisasi array dengan nilai awal
 	// Horizontal
 	fruits := [5]string{"apple", "mango", "watermelon", "orange", "banana"}
 	for _, fruit := range fruits {
@@ -37,7 +37,7 @@ func main() {
 		fmt.Printf("Fruit2 [%d]: %s\n", i, fruit2)
 	}
 
-	// TODO: inisialisasi arrayy tanpa jumlah elemen [...]
+	// TODO: inisialisasi array tanpa jumlah elemen [...]
 	var numbers = [...]int{1, 2, 3, 4, 5}
 	fmt.Println("data array \t:", numbers)
 	fmt.Println("jumlah elemen \t:", len(numbers))
@@ -46,7 +46,7 @@ func main() {
 		fmt.Printf("Numbers [%d]: %d\n", i, numbers[i])
 	}
 
-	// TODO: alokasi elemen arraya menggunakan keyword make
+	// TODO: alokasi elemen array menggunakan keyword make
 	var Fruits = make([]string, 2)
 	Fruits[0] = "mango"
 	Fruits[1] = "apple"
@@ -58,5 +58,5 @@ func main() {
 
 /*  TODO: notes
 range mengembalikan 2 nilai yaitu indeks dan elemen
-sedangkan di Go tidak diperbollehkannya adanya variablle yang menganggur/tidak dipakai maka bisa ditampung kedalam underscore(_)
+sedangkan di Go tidak diperbolehkannya adanya variable yang menganggur/tidak dipakai maka bisa ditampung kedalam underscore(_)
 */
