@@ -9,8 +9,7 @@ func main() {
 	array2 := [3]int{11, 12, 13}    // array
 	array3 := [...]int{14, 15, 16}  // array
 
-	fmt.Println("array3:", array3)
-	fmt.Println("size array3:", len(array3))
+	fmt.Printf("len(array3): %d, cap(array3): %d, array3: %v\n", len(array3), cap(array3), array3)
 
 	_, _, _ = slice, array, array2
 
