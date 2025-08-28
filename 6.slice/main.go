@@ -31,7 +31,7 @@ func main() {
 	fmt.Println("len slice afruits[0][2]:", len(afruits))
 	fmt.Println("len slice bfruits[1][4]:", len(bfruits))
 
-	// TODO: fungsi cap()  -> menghitung kapasitas maksimal sice
+	// TODO: fungsi cap() -> menghitung kapasitas maksimal sice
 	fmt.Println("cap slice afruits[0][2]:", cap(afruits))
 	fmt.Println("cap slice bfruits[1][4]:", cap(bfruits))
 
@@ -51,7 +51,6 @@ func main() {
 	copyFruits := make([]string, 2)
 	copy(copyFruits, fruits) // TODO: copy (destination, source)
 	fmt.Println("copyFruits:", copyFruits)
-
 }
 
 /* TODO: notes
