@@ -14,6 +14,8 @@ func main() {
 
 	// TODO: Deklarasi Variable Tanpa Tipe Data (type inference)
 	var firstName2 = "alfa"
+
+	// TODO: Short variable declarations
 	lastName2 := "edison" //  hanya di assign sekali diawal deklarasi
 
 	fmt.Printf("Halo, %s %s!\n", firstName2, lastName2)
