@@ -11,7 +11,7 @@ func (r Rectangle) Area() float32 {
 	return r.Length * r.Width
 }
 
-// TODO: delete * untuk melihat perbedaan method pointers dengan value receivers
+// TODO: delete (*) untuk melihat perbedaan method pointers dengan value receivers
 func (r *Rectangle) Scale(s float32) {
 	r.Length *= s
 	r.Width *= s
