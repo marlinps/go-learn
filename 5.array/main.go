@@ -57,6 +57,5 @@ func main() {
 }
 
 /*  TODO: notes
-range mengembalikan 2 nilai yaitu indeks dan elemen
-sedangkan di Go tidak diperbolehkannya adanya variable yang menganggur/tidak dipakai maka bisa ditampung kedalam underscore(_)
+range mengembalikan 2 nilai yaitu indeks dan elemen sedangkan di Go tidak diperbolehkannya adanya variable yang menganggur/tidak dipakai maka bisa ditampung kedalam underscore(_)
 */
