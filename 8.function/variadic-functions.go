@@ -10,12 +10,10 @@ func Sum(numbers ...int) (total int, avg float64) {
 
 	avg = float64(total) / float64(len(numbers))
 	return
-
 }
 
 func main() {
 	total, avg := Sum(1, 2, 3, 4, 5)
 	fmt.Println("Total:", total)
 	fmt.Println("Average:", avg)
-
 }
