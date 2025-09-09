@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func Sum(numbers ...int) (total int, avg float64) {
+func Sum(numbers ...int) (total int, avg float64) { // TODO: Predefine return values dimana nilai balik bisa didefinisikan di awal
 	total = 0
 	for _, number := range numbers {
 		total += number
