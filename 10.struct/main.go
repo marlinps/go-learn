@@ -68,6 +68,26 @@ func main() {
 	   - jika ada field yang sama pada parent struct dan embedded struct, maka untuk mengakses field embedded struct harus menggunakan parent struct secara eksplisit atau jelas
 	*/
 
+	// TODO: Kombinasi struct dan slice
+	var students = []Student{
+		{
+			Name:  "Edo",
+			Grade: 10,
+		},
+		{
+			Name:  "Fajar",
+			Grade: 9,
+		},
+		{
+			Name:  "Gina",
+			Grade: 8,
+		},
+	}
+	fmt.Println("Students:", students)
+
+	for _, student := range students {
+		fmt.Println("Student Name:", student.Name, ",Grade:", student.Grade)
+	}
 }
 
 /* TODO: struct
