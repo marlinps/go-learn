@@ -19,7 +19,6 @@ func main() {
 
 	fmt.Println("Student A:", studentA)
 	fmt.Println("Student B:", studentB)
-
 }
 
 /* TODO: struct
