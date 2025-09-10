@@ -7,6 +7,12 @@ type Student struct {
 	Grade int
 }
 
+// TODO: embedded struct (menempelkan sebuah struct ke property struct lainnya)
+type Course struct {
+	NameCourse string
+	Student    // embedded struct
+}
+
 func main() {
 	var studentA Student
 	studentA.Name = "Budi"
@@ -26,12 +32,36 @@ func main() {
 	fmt.Println("Student A (value using pointer):", *s2)        // print value using pointer
 	fmt.Println("Student A Name (using pointer):", s2.Name)     // print value using pointer, llangsung akses field tanpa dereference *s2.Name
 
-	// TODO: keisitimewaan property dalam object pointer tanpa perlu deference nilai aslinya tetapi langsung akses fieldnya
+	// TODO: keistimewaan property dalam object pointer tanpa perlu deference nilai aslinya tetapi langsung akses fieldnya
 	s2.Name = "Fadhil"
 	s2.Grade = 9
 
 	fmt.Println("Student A (after modification using pointer):", studentA) // print value asli yang sudah di modifikasi menggunakan pointer
 
+	// TODO: Implement embedded struct
+	// 1. cara pertama
+	courseA := Course{
+		NameCourse: "Programming",
+		Student:    studentA,
+	}
+	fmt.Println("CourseA:", courseA)
+
+	// 2. cara kedua
+	var courseB Course
+	courseB.NameCourse = "Calculus"
+	courseB.Name = "Andi" // akses langsung field struct Student yang di embedded
+	courseB.Grade = 8
+	fmt.Println("CourseB:", courseB)
+
+	// 3. cara ketiga
+	coursecC := Course{
+		NameCourse: "Machine Learning",
+		Student: Student{
+			Name:  "Charles",
+			Grade: 11,
+		},
+	}
+	fmt.Println("CourseC:", coursecC)
 }
 
 /* TODO: struct
