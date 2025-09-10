@@ -61,8 +61,8 @@ func main() {
 		},
 	}
 	fmt.Println("CourseC:", coursecC)
-	fmt.Println("CourceC Student Name:", coursecC.Name)                                        // akses langsung field struct Student yang di embedded
-	fmt.Println("CourceC student Name (using parent struct(Student)):", coursecC.Student.Name) // akses field struct Student yang di embedded menggunakan parent struct (Student) hasilnya sama saja
+	fmt.Println("CourseC Student Name:", coursecC.Name)                                        // akses langsung field struct Student yang di embedded
+	fmt.Println("CourseC student Name (using parent struct(Student)):", coursecC.Student.Name) // akses field struct Student yang di embedded menggunakan parent struct (Student) hasilnya sama saja
 
 	/* TODO: Notes tentang embedded struct
 	   - jika ada field yang sama pada parent struct dan embedded struct, maka untuk mengakses field embedded struct harus menggunakan parent struct secara eksplisit atau jelas
