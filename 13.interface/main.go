@@ -36,8 +36,8 @@ func (p *persegi) keliling() float64 {
 
 func main() {
 	l := lingkaran{4}
-	fmt.Println("Luas Lingkaran :", l.luas())
-	fmt.Println("Keliling Lingkaran :", l.keliling())
+	fmt.Printf("Luas Lingkaran : %.2f\n", l.luas())
+	fmt.Printf("Keliling Lingkaran :%.2f\n", l.keliling())
 
 	p := persegi{2}
 	fmt.Println("Luas Persegi :", p.luas())
