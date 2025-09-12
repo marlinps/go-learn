@@ -1,7 +1,7 @@
 package main
 
 import (
-	. "12.level-akses/library" // menambahkan titi (.) untuk mengimport semua struct dan function di package library tanpa menulis library.
+	. "12.level-akses/library" // menambahkan titik (.) untuk mengimport semua struct dan function di package library tanpa menulis library.
 
 	//TODO: pemanfaatan alias import
 	f "fmt"
@@ -25,5 +25,5 @@ func main() {
 	//library.SayHello(student.Name)
 	SayHello(student.Name)
 
-	f.Println("Pemanfaatan alias import, menulisakan alias di awal import package")
+	f.Println("Pemanfaatan alias import, menuliskan alias di awal import package")
 }
