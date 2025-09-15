@@ -12,19 +12,19 @@ type hitung interface {
 
 type lingkaran struct {
 	jariJari float64
-}aran) luas() float64 {
-	return math.Pi * math.Pow(l.jariJari, 2)
 }
 
 func (l *lingkaran) keliling() float64 {
 	return 2 * math.Pi * l.jariJari
 }
 
+func (l *lingkaran) luas() float64 {
+	return math.Pi * math.Pow(l.jariJari, 2)
+}
+
 type persegi struct {
 	sisi float64
 }
-
-func (l *lingk
 
 func (p *persegi) luas() float64 {
 	return math.Pow(p.sisi, 2)
