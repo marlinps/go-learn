@@ -90,6 +90,7 @@ func main() {
 	}
 }
 
+
 /* TODO: struct
 - struct adalah tipe data yang digunakan untuk mengelompokkan beberapa variable menjadi satu kesatuan
 - struct bisa berisi variable dengan tipe data yang berbeda
