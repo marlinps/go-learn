@@ -38,4 +38,16 @@ func main() {
 	} else {
 		fmt.Println(err.Error())
 	}
+
+	// TODO: panic -> informasi error yang ditampilkan adalah stack trace error
+	var name2 string
+	fmt.Printf("Type your name2: ")
+	fmt.Scanln(&name2)
+
+	if valid, err := validate(name2); valid {
+		fmt.Println("Hello", name2)
+	} else {
+		panic(err.Error())
+		fmt.Println("end process")
+	}
 }
