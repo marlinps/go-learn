@@ -39,7 +39,7 @@ func main() {
 		fmt.Println(err.Error())
 	}
 
-	// TODO: panic -> informasi error yang ditampilkan adalah stack trace error
+	// TODO: panic -> informasi error yang ditampilkan adalah stack trace error, setelah ada panic maka program akan berhenti
 	var name2 string
 	fmt.Printf("Type your name2: ")
 	fmt.Scanln(&name2)
@@ -49,5 +49,20 @@ func main() {
 	} else {
 		panic(err.Error())
 		fmt.Println("end process")
+	}
+
+	// TODO: recover -> menangkap panic agar program tidak berhenti
+	var name3 string
+	fmt.Printf("Type your name3: ")
+	fmt.Scanln(&name3)
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("Recovered from error:", r)
+		}
+	}()
+	if valid, err := validate(name3); valid {
+		fmt.Println("Hello", name3)
+	} else {
+		panic(err.Error())
 	}
 }
