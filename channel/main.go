@@ -31,5 +31,4 @@ func main() {
 }
 
 /* Channel adalah sebuah tipe data yang digunakan untuk mengirim dan menerima data antar goroutine. Channel memungkinkan komunikasi dan sinkronisasi antara goroutine, sehingga memudahkan pengelolaan konkuren dalam program Go.
-
  */
