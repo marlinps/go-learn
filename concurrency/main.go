@@ -21,4 +21,5 @@ func main() {
 
 	var input string
 	fmt.Scanln(&input) // menunggu input dari user agar program tidak langsung selesai
+
 }
