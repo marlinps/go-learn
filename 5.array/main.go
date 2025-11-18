@@ -37,7 +37,7 @@ func main() {
 		fmt.Printf("Fruit2 [%d]: %s\n", i, fruit2)
 	}
 
-	// TODO: inisialisasi array tanpa jumlah elemen [...]
+	//TODO: inisialisasi array tanpa jumlah elemen [...]
 	var numbers = [...]int{1, 2, 3, 4, 5}
 	fmt.Println("data array \t:", numbers)
 	fmt.Println("jumlah elemen \t:", len(numbers))
