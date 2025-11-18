@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-// TODO: Custom error
+// TODO:Custom error
 func validate(input string) (bool, error) {
 	if strings.TrimSpace(input) == "" {
 		return false, errors.New("cannot be empty")
@@ -39,7 +39,7 @@ func main() {
 		fmt.Println(err.Error())
 	}
 
-	// TODO: panic -> informasi error yang ditampilkan adalah stack trace error, setelah ada panic maka program akan berhenti
+	//TODO: panic -> informasi error yang ditampilkan adalah stack trace error, setelah ada panic maka program akan berhenti
 	var name2 string
 	fmt.Printf("Type your name2: ")
 	fmt.Scanln(&name2)
@@ -51,7 +51,7 @@ func main() {
 		fmt.Println("end process")
 	}
 
-	// TODO: recover -> menangkap panic agar program tidak berhenti
+	//TODO: recover -> menangkap panic agar program tidak berhenti
 	var name3 string
 	fmt.Printf("Type your name3: ")
 	fmt.Scanln(&name3)
